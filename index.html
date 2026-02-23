@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>congo airways</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <HEADER>
+        <DIV class="logo">
+            <a href="index.html"><span>CONGO</span>|airways</a>
+        </DIV>
+        <UL class="menu">
+           <li><a href="index.html">accueil</a></li>
+           <li><a href="apropos.html">a propos</a></li>
+           <li><a href="DESTINATION.html">destination</a></li>
+           <li><a href="CONTACT.html">contact</a></li>
+           <li><a href="payement.html">payement</a></li>
+        
+        </UL>
+        <a href="DESTINATION.html" class="btn-reservation">reserver maintenant</a>
+        <div class="responsive-menu"></div>
+    </HEADER>
+    <!-- acceuil section -->
+	<section id="home" >
+		<h2>Nous suivre pour</h2>
+		<h4>Voyagez en securité</h4>
+		
+        
+        <div class="find_trip">
+            <form action="">
+                <div>
+                    <label>PAYS</label>
+                    <input type="text"placeholder="Entrez un pays">
+                </div>
+                <div>
+                    <label>VILLE</label>
+                    <input type="text"placeholder="Entrez une ville">
+                </div>
+                <div>
+                    <label>REGION</label>
+                    <input type="text"placeholder="Entrez une region">
+                </div>
+                <input type="submit" value="VOIR">
+            </form>
+
+        </div>   
+        <script>
+            var toggle_menu=document.querySelector('.responsive-menu');
+            var menu=document.querySelector('menu');
+                 toggle_menu.onclick= function(){          
+                 toggle_menu.classList.toggle('active');
+                 menu.classList.toggle('responsive')
+                
+                
+            }
+           </script>  
+           <script>
+            var menu_toggle=document.querySelector('.find_trip form input[type="submit"]');
+            menu_toggle.onclick=function(){
+                alert("mauvaise connection.chers clients veuillez vous diriger dans la page DESTINATION svp ")
+            }
+        </script>
+        
+    </section>
+   
+  
+
+
+
+
+
+</body>
+
+</html>
